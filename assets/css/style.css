@@ -1,194 +1,206 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/*style body color and font family*/
-
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: #536f7c;
-}
-
-header {
-    padding: 0px 45px;
-    display: flex;
-    /*add display: flex to allow the content on header to shrink with screen-size*/
-    justify-content: space-between;
-    /*add justify-content: (choose an option) to be able to separate the content from its parent element*/
-    flex-wrap: wrap;
-    /*use flex-wrap: <choose wrap> to specify that if screen gets smaller lines can greak into more line*/
-    /*This will make the header sticky and scroll down as we scroll down */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    /*this is to be able to support other browsers like IE and Ios above 3 declarations*/
-    background-image: url("../images/hero.jpg");
-    background-size: inherit;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 20%;
-    /*this will keep the header on top (stacking layers first on top)*/
-    z-index: 9999;
-}
-
-
-/*Navigation margin to 14px from top*/
-
-header nav {
-    margin: 14px 0;
-}
-
-
-/*header h1 style*/
-
-header h1 {
-    font-weight: bold;
-    font-size: 40px;
-    margin: 0;
-    text-shadow: 0 0 30px rgba(83, 111, 124, 1);
-}
-
-
-/*header anchor style*/
-
-header a {
-    text-decoration: none;
-    color: white;
-}
-
-
-/*Navigation links position*/
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-
-/*Navigation links style*/
-
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.60vw;
-    /*we change tha font to 1.55vw because we are telling the broweser the font should be 1.55 percent of the screen size*/
-}
-
-
-/*Hero Image Style*/
-
-.hero {
-    background-image: url("../images/hero.jpg");
-    background-size: inherit;
-    background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap-reverse;
-    align-items: stretch;
-    background-attachment: fixed;
-    background-position: 20%;
-}
-
-
-/*Hero Box Syle*/
-
-.hero-code {
-    width: 50%;
-    text-align: center;
-    margin: 3%;
-    color: #fff;
-    font-size: 23px;
-    line-height: 1.2;
-    color: white;
-    background-color: rgba(94, 94, 94, 0.8);
-    padding: 20px;
-    border-style: solid;
-    border-width: 3px;
-    width: 40%;
-    margin: 3.5%;
-    box-shadow: 0 0 30px rgba(83, 111, 124, 1);
-    border-radius: 15px;
-}
-
-
-/*Hero Box Style H2*/
-
-.hero-code h2 {
-    font-style: italic;
-    font-size: 40px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-
-/*Style titles in sections*/
-
-.title-section {
-    font-size: 40px;
-    color: white;
-    border-bottom: 4px solid;
-    border-inline-end-width: 50vmax;
-    padding-bottom: 2px;
-    text-align: center;
-    margin: 23px auto 20px auto;
-    width: 20%;
-}
-
-
-/*border color for sections*/
-
-.border1 {
-    border-color: white;
-}
-
-
-/*flex-row in section*/
-
-.flex-row {
-    display: flex;
-}
-
-.container {
-    overflow: auto;
-    width: auto;
-    background-color: darkgoldenrod;
-}
-
-.container h3 {
-    color: rgba(0, 0, 0, 0.692);
-    font-size: 25px;
-    margin-left: 35px;
-}
-
-.container p {
-    font-size: 20px;
-}
-
-
-/*image style*/
-
-.image1 {
-    width: 200px;
-    height: 200px;
-    margin: 0 15px 35px 35px;
-}
-
-
-/*items within the section to float*/
-
-.bio,
-.image1 {
-    float: left;
-}
-
-
-/*to shorten the text width in the div*/
-
-.bio {
-    width: 100%;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ /*style body color and font family*/
+ 
+ body {
+     font-family: Helvetica, Arial, sans-serif;
+     background-color: #536f7c;
+ }
+ 
+ header {
+     padding: 0px 45px;
+     display: flex;
+     /*add display: flex to allow the content on header to shrink with screen-size*/
+     justify-content: space-between;
+     /*add justify-content: (choose an option) to be able to separate the content from its parent element*/
+     flex-wrap: wrap;
+     /*use flex-wrap: <choose wrap> to specify that if screen gets smaller lines can greak into more line*/
+     /*This will make the header sticky and scroll down as we scroll down */
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     /*this is to be able to support other browsers like IE and Ios above 3 declarations*/
+     background-image: url("../images/hero.jpg");
+     background-size: inherit;
+     background-position: center;
+     background-attachment: fixed;
+     background-position: 20%;
+     /*this will keep the header on top (stacking layers first on top)*/
+     z-index: 9999;
+ }
+ /*Navigation margin to 14px from top*/
+ 
+ header nav {
+     margin: 14px 0;
+ }
+ /*header h1 style*/
+ 
+ header h1 {
+     font-weight: bold;
+     font-size: 40px;
+     margin: 0;
+     text-shadow: 0 0 30px rgba(83, 111, 124, 1);
+ }
+ /*header anchor style*/
+ 
+ header a {
+     text-decoration: none;
+     color: white;
+ }
+ /*Navigation links position*/
+ 
+ header nav ul {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+ }
+ /*Navigation links style*/
+ 
+ header nav ul li a {
+     padding: 10px 15px;
+     font-weight: lighter;
+     font-size: 1.60vw;
+     /*we change tha font to 1.55vw because we are telling the broweser the font should be 1.55 percent of the screen size*/
+ }
+ /*Hero Image Style*/
+ 
+ .hero {
+     background-image: url("../images/hero.jpg");
+     background-size: inherit;
+     background-position: center;
+     display: flex;
+     justify-content: flex-end;
+     flex-wrap: wrap-reverse;
+     align-items: stretch;
+     background-attachment: fixed;
+     background-position: 20%;
+ }
+ /*Hero Box Syle*/
+ 
+ .hero-code {
+     width: 50%;
+     text-align: center;
+     margin: 3%;
+     color: #fff;
+     font-size: 23px;
+     line-height: 1.2;
+     color: white;
+     background-color: rgba(94, 94, 94, 0.8);
+     padding: 20px;
+     border-style: solid;
+     border-width: 3px;
+     width: 40%;
+     margin: 3.5%;
+     box-shadow: 0 0 30px rgba(83, 111, 124, 1);
+     border-radius: 15px;
+ }
+ /*Hero Box Style H2*/
+ 
+ .hero-code h2 {
+     font-style: italic;
+     font-size: 40px;
+     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+ /*Style titles in sections*/
+ 
+ .title-section {
+     font-size: 40px;
+     color: white;
+     border-bottom: 4px solid;
+     border-inline-end-width: 50vmax;
+     padding-bottom: 2px;
+     text-align: center;
+     margin: 23px auto 20px auto;
+     width: 20%;
+ }
+ /*border color for sections*/
+ 
+ .border1 {
+     border-color: white;
+ }
+ /*flex-row in section*/
+ 
+ .flex-row {
+     display: flex;
+ }
+ 
+ .container {
+     overflow: auto;
+     width: auto;
+     background-color: darkgoldenrod;
+ }
+ 
+ .container h3 {
+     color: rgba(0, 0, 0, 0.692);
+     font-size: 25px;
+     margin-left: 35px;
+ }
+ 
+ .container p {
+     font-size: 20px;
+ }
+ /*image style*/
+ 
+ .image1 {
+     width: 200px;
+     height: 200px;
+     margin: 0 15px 35px 35px;
+ }
+ /*items within the section to float*/
+ 
+ .bio,
+ .image1 {
+     float: left;
+ }
+ /*to shorten the text width in the div*/
+ 
+ .bio {
+     width: 100%;
+ }
+ 
+ .grid-item {
+     display: flex;
+     justify-content: center;
+     border: 5px solid rgba(0, 0, 0, 0.2);
+     margin: 5px auto;
+     border-radius: 5px;
+     font-size: 35px;
+     background-color: aquamarine;
+ }
+ 
+ .grid-container {
+     display: grid;
+     background-color: lightcoral;
+     grid-template-columns: repeat(3, 4fr);
+     grid-gap: 5px;
+ }
+ 
+ .item-1 {
+     grid-row: 1 / span 2;
+     grid-column: 1 / span 1;
+ }
+ 
+ .item-2 {
+     grid-row: 2 / span 2;
+     grid-column: 2 / span 1;
+ }
+ 
+ .item-3 {
+     grid-row: 1 / span 2;
+     grid-column: 3 / span 1;
+ }
+ 
+ .item-4 {
+     grid-row: 4 / span 2;
+     grid-column: 1 / span 1;
+ }
+ 
+ .item-5 {
+     grid-row: 4 / span 2;
+     grid-column: 3 / span 3;
+ }
